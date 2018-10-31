@@ -1,0 +1,333 @@
+/*******************************************************MENY******************************************************/
+
+#menu_background {
+    background-image: url(produksjon/SVG/forside%20uten%20romskip%20og%20astronaut.svg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.5vw;
+    position: relative;
+}
+
+#settings_background {
+    background-image: url(produksjon/SVG/bg%20settings.svg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.5vw;
+    position: relative;
+}
+
+#astronaut,
+#romskip {
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#astronaut {
+    background-image: url(produksjon/SVG/astronaut.svg);
+    height: 15vw;
+    position: absolute;
+    width: 15vw;
+    top: 29vw;
+    left: 83vw;
+}
+
+#romskip {
+    background-image: url(produksjon/SVG/romskip.svg);
+    height: 28vw;
+    position: absolute;
+    width: 20vw;
+    z-index: 1;
+    top: 26.6vw;
+    left: 78vw;
+}
+
+#start {
+    background-image: url(produksjon/SVG/spillknapp.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 11vw;
+    width: 11vw;
+    bottom: -4vw;
+    left: 55vw;
+}
+
+#settingsknapp {
+    background-image: url(produksjon/SVG/settingsknapp.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 4vw;
+    width: 6vw;
+    top: 50vw;
+    left: 2.5vw;
+    z-index: 1;
+}
+
+#exitknapp {
+    background-image: url(produksjon/SVG/exit%20knapp.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 4vw;
+    width: 6vw;
+    top: 46vw;
+    left: 2.8vw;
+    z-index: 1;
+}
+
+.hide
+/***************************************************SPIL*****************************************************/
+
+#game_elements {}
+
+#game_background {
+    background-image: url(produksjon/SVG/bg.svg);
+    width: 100vw;
+    height: 56.5vw;
+    background-repeat: no-repeat;
+    height: 60vw;
+    position: relative;
+}
+
+#astronaut_tau {
+    background-image: url(produksjon/SVG/traad.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 20vw;
+    top: 26vw;
+    left: 70vw;
+    z-index: 1;
+}
+
+#romskip_spill {
+    background-image: url(produksjon/SVG/romskip%20Spillsk%C3%A6rm.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30vw;
+    width: 23vw;
+    top: 22vw;
+    left: 77vw;
+    z-index: 2;
+}
+
+#astronaut_spill {
+    background-image: url(produksjon/SVG/astronaut%20Spilsk%C3%A6rm.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 15vw;
+    top: 30vw;
+    left: 70vw;
+    z-index: 2;
+}
+
+
+#tyggis1 {
+    background-image: url(produksjon/SVG/tyggisboble%201.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 11vw;
+    width: 11vw;
+    top: 30vw;
+    left: 18vw;
+}
+
+#tyggis2 {
+    background-image: url(produksjon/SVG/tyggisboble%202.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 9vw;
+    width: 9vw;
+    top: 5vw;
+    left: 23vw;
+    transform: rotate(25deg);
+}
+
+#tyggis3 {
+    background-image: url(produksjon/SVG/Tyggisklatt1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 11vw;
+    width: 13vw;
+    top: -2vw;
+    left: 60vw;
+}
+
+#tyggis4 {
+    background-image: url(produksjon/SVG/tyggisklatt2.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 3vw;
+    width: 4vw;
+    top: 30vw;
+    left: 50vw;
+}
+
+#tyggis5 {
+    background-image: url(produksjon/SVG/tyggisklatt2.svg);
+    position: relative;
+    background-repeat: no-repeat;
+    height: 4vw;
+    width: 5vw;
+    top: -45vw;
+    left: 60vw;
+}
+
+#tyggis6 {
+    background-image: url(produksjon/SVG/tyggisboble%202.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: rotate(160deg);
+    height: 8vw;
+    width: 8vw;
+    top: 20vw;
+    left: 75vw;
+}
+
+#tyggis7 {
+    background-image: url(produksjon/SVG/tyggisboble%201.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: rotate(110deg);
+    height: 2.5vw;
+    width: 2.5vw;
+    top: 8vw;
+    left: 48vw;
+}
+
+#tyggis8 {
+    background-image: url(produksjon/SVG/Tyggisklatt1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 5vw;
+    width: 7vw;
+    top: 15vw;
+    left: 30vw;
+    transform: rotate(30deg);
+}
+
+/*************************************GAME-UI*****************************************/
+
+#time {
+    background-image: url(produksjon/SVG/det%20rosa%20hull.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 3vw;
+    width: 3vw;
+    top: 23vw;
+    left: 50vw;
+}
+
+#points {
+    background-image: url(produksjon/SVG/naal.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 28vw;
+    width: 13vw;
+    top: 10vw;
+    left: -2vw;
+}
+
+#energy {}
+
+#omstart {
+    background-image: url(produksjon/SVG/omstart.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 15vw;
+    width: 6.5vw;
+    top: 41.5vw;
+    left: 2.5vw;
+}
+
+
+#settings {
+
+    background-image: url(produksjon/SVG/settingspanel.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 60vw;
+    width: 50vw;
+    ;
+    top: 10vw;
+    left: 25vw;
+}
+
+#gameover {
+    background-image: url(produksjon/SVG/Taperscreen.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 30vw;
+    width: 55%;
+    top: 10.5vw;
+    left: 25vw;
+
+}
+
+#levelcomplete {
+    background-image: url(produksjon/SVG/Vinnerscreen.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 30vw;
+    width: 44%;
+    top: 10vw;
+    left: 25vw;
+}
+
+#play {
+    background-image: url(produksjon/SVG/spillknapp.svg);
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 40vw;
+    left: 60vw;
+
+}
+
+/*******EFFEKTER********/
+.hide {
+    display: none;
+}
+
+.show {
+    visibility: visible;
+
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

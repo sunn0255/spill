@@ -40,17 +40,18 @@ function showStart() {
     document.querySelector("#play").classList.add("pulse");
     document.querySelector("#play").addEventListener("click", hideStart);
     document.querySelector("#settingsknapp").addEventListener("click", showSettings);
+
 }
 
 function hideStart() {
     console.log("du har klikket")
     document.querySelector("#play").removeEventListener("click", hideStart);
+    document.querySelector("#astronaut").classList.add("hide");
+    document.querySelector("#romskip").classList.add("romfart");
 
     document.querySelector("#play").classList.remove("pulse");
     document.querySelector("#menu_background").classList.add("fade_out");
     document.querySelector("#play").classList.add("fade_out");
-    document.querySelector("#astronaut").classList.add("fade_out");
-    document.querySelector("#romskip").classList.add("fade_out");
     document.querySelector("#menu_background").addEventListener("animationend", startGame);
 
 }
@@ -58,6 +59,8 @@ function hideStart() {
 function startGame() {
     console.log("start game");
     document.querySelector("#start").removeEventListener("animationend", startGame);
+    document.querySelector("#romskip").classList.remove("romfart");
+    document.querySelector("#romskip").classList.add("hide");
     document.querySelector("#menu_background").classList.add("hide");
     document.querySelector("#menu_background").classList.remove("fade_out");
     document.querySelector("#game_background").classList.remove("hide");
@@ -66,6 +69,7 @@ function startGame() {
     document.querySelector("#game_background").classList.remove("hide");
     document.querySelector("#astronaut_tau").classList.remove("hide");
     document.querySelector("#time").classList.remove("hide");
+    document.querySelector("#time").classList.add("rotate_grow");
     document.querySelector("#points").classList.remove("hide");
     document.querySelector("#tyggis1").classList.remove("hide");
     document.querySelector("#tyggis2").classList.remove("hide");
@@ -75,6 +79,14 @@ function startGame() {
     document.querySelector("#tyggis6").classList.remove("hide");
     document.querySelector("#tyggis7").classList.remove("hide");
     document.querySelector("#tyggis8").classList.remove("hide");
+    document.querySelector("#tyggis1").classList.add("pulse");
+    document.querySelector("#tyggis2").classList.add("pulse");
+    document.querySelector("#tyggis3").classList.add("pulse");
+    document.querySelector("#tyggis4").classList.add("pulse");
+    document.querySelector("#tyggis5").classList.add("pulse");
+    document.querySelector("#tyggis6").classList.add("pulse");
+    document.querySelector("#tyggis7").classList.add("pulse");
+    document.querySelector("#tyggis8").classList.add("pulse");
 }
 
 function showSettings() {

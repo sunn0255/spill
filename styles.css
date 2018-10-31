@@ -30,6 +30,11 @@
     width: 15vw;
     top: 29vw;
     left: 83vw;
+    /* animation-name: romfart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;*/
 }
 
 #romskip {
@@ -40,6 +45,40 @@
     z-index: 1;
     top: 26.6vw;
     left: 78vw;
+}
+
+.romfart {
+    animation-name: romfart;
+    animation-duration: 2.6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+@keyframes romfart {
+    0% {
+        top: 29vw;
+
+    }
+
+
+    30% {
+        top: -10vw;
+        left: 83vw;
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        top: -10vw;
+        transform: rotate(-90deg);
+        left: -80vw;
+    }
+
+
 }
 
 #start {
@@ -209,6 +248,7 @@
 /*************************************GAME-UI*****************************************/
 
 #time {
+    /*******************Det rosa hulls***************************/
     background-image: url(produksjon/SVG/det%20rosa%20hull.svg);
     position: absolute;
     background-repeat: no-repeat;
@@ -216,6 +256,25 @@
     width: 3vw;
     top: 23vw;
     left: 50vw;
+}
+
+.rotate_grow {
+    animation-name: rotateGrow;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateGrow {
+
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        transform: scale(6);
+    }
 }
 
 #points {
@@ -318,6 +377,7 @@
 .fade_out {
     animation-name: fadeout_kf;
     animation-duration: .6s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
